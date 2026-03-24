@@ -1,0 +1,11 @@
+<input id="a"><input id="b"><input id="kq"><br>
+
+<input type="radio" name="pt" value="+">Cộng
+<input type="radio" name="pt" value="-">Trừ
+<input type="radio" name="pt" value="*">Nhân
+<input type="radio" name="pt" value="/">Chia
+
+<button onclick="
+let op=document.querySelector('input[name=pt]:checked').value;
+kq.value = eval(a.value + op + b.value);
+">Tính</button>

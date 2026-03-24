@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style: none;
+  background: black;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+}
+
+ul li a {
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+ul li ul {
+  display: none;
+  position: absolute;
+  background: black;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+ul li ul li {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+
+<ul>
+  <li><a href="#">Trang chủ</a></li>
+  <li><a href="#">Khóa học</a>
+    <ul>
+      <li><a href="#">Tin học căn bản</a></li>
+      <li><a href="#">Lập trình C</a></li>
+    </ul>
+  </li>
+</ul>
+
+</body>
+</html>
