@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Danh sách thiết bị</title>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+var n = prompt("Nhập số lượng thiết bị:", 3);
+var DS = [];
+
+for (var i = 0; i < n; i++) {
+DS[i] = prompt("Nhập tên thiết bị:", "");
+}
+
+document.write("<h2>Danh sách thiết bị</h2>");
+document.write("<table border='1'>");
+document.write("<tr><th>STT</th><th>Tên thiết bị</th></tr>");
+
+for (var i = 0; i < DS.length; i++) {
+if (DS[i].toLowerCase().includes("computer")) {
+document.write("<tr>");
+document.write("<td>" + (i + 1) + "</td>");
+document.write("<td>" + DS[i] + "</td>");
+document.write("</tr>");
+}
+}
+
+document.write("</table>");
+</script>
+</body>
+</html>

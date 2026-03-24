@@ -1,0 +1,15 @@
+<input id="heSo">
+<input id="luongCoSo">
+<input id="luongCB">
+<input id="phuCap">
+<input id="thamNien">
+<input id="thanhTien">
+
+<script>
+function tinh(){
+luongCB.value = heSo.value * luongCoSo.value;
+phuCap.value = luongCB.value * 0.25;
+thamNien.value = new Date().getFullYear() - namVaoLam.value;
+thanhTien.value = Number(luongCB.value) + Number(phuCap.value);
+}
+</script>

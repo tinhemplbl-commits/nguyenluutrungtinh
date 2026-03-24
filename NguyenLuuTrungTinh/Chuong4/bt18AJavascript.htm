@@ -1,0 +1,12 @@
+script>
+function dem(){
+soKyTu.value = noiDung.value.length;
+if(noiDung.value.length > 200){
+alert("Quá 200 ký tự!");
+}
+}
+</script>
+
+<textarea id="noiDung" onkeyup="dem()"></textarea>
+<br>
+<input id="soKyTu">
